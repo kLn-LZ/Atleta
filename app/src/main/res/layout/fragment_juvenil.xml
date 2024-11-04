@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/juvenilLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JuvenilFragment">
+
+    <EditText
+        android:id="@+id/etNomeJuvenil"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etDataNascimentoJuvenil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataNascimentoJuvenil"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="@string/data_nascimento"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etBairroJuvenil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeJuvenil" />
+
+    <EditText
+        android:id="@+id/etBairroJuvenil"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/bairro"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etQtdAnoPraticaEsporteJuvenil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascimentoJuvenil" />
+
+    <EditText
+        android:id="@+id/etQtdAnoPraticaEsporteJuvenil"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="@string/qtd_ano_pratica_esporte"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarJuvenil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBairroJuvenil" />
+
+    <Button
+        android:id="@+id/btnCadastrarJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/cadastrar"
+        app:layout_constraintBottom_toTopOf="@+id/tvListaJuvenil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etQtdAnoPraticaEsporteJuvenil" />
+
+    <TextView
+        android:id="@+id/tvListaJuvenil"
+        android:layout_width="352dp"
+        android:layout_height="203dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarJuvenil" />
+</androidx.constraintlayout.widget.ConstraintLayout>

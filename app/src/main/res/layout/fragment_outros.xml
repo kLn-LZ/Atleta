@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outrosLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OutrosFragment">
+
+    <Button
+        android:id="@+id/btnCadastrarOutros"
+        android:layout_width="114dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="51dp"
+        android:text="@string/cadastrar"
+        app:layout_constraintBottom_toTopOf="@+id/tvListaOutros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRecordeOutros" />
+
+    <TextView
+        android:id="@+id/tvListaOutros"
+        android:layout_width="336dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarOutros" />
+
+    <EditText
+        android:id="@+id/etBairroOutros"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="@string/bairro"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etAcademiaOutros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascimentoOutros" />
+
+    <EditText
+        android:id="@+id/etDataNascimentoOutros"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/data_nascimento"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etBairroOutros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeOutros" />
+
+    <EditText
+        android:id="@+id/etNomeOutros"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etDataNascimentoOutros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAcademiaOutros"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/academia"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etRecordeOutros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBairroOutros" />
+
+    <EditText
+        android:id="@+id/etRecordeOutros"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/recorde"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarOutros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAcademiaOutros" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
